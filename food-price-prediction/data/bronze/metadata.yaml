@@ -1,0 +1,11 @@
+files:
+  - file_name: monthy_retail_food_price.csv
+    selected_columns:
+      REF_DATE: "Reference date for the given product price"
+      VALUE: "Product unit price"
+      Products: "Name of the product"
+    original_name: "18100245.csv"
+    origin: "Statistics Canada"
+    link: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024502"
+    description: "monthely average retail prices for selected products"
+    metadata: "https://www.statcan.gc.ca/en/topics-start/food-price"
