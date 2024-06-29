@@ -21,6 +21,7 @@ files:
   #   origin: "World BAnk"
   #   link: "https://microdata.worldbank.org/index.php/catalog/study/WLD_2021_RTFP-CTRY_v02_M"
   #   api_endpoint: "https://microdata.worldbank.org/index.php/api/tables/data/fcv/wld_2021_rtfp_v02_m"
+  #   api_guide: "https://wits.worldbank.org/data/public/WITSAPI_UserGuide.pdf"
   #   api_documentation: "https://microdata.worldbank.org/index.php/catalog/4483/data-api"
   #   description: " Monthly food price estimates by product and market 36 countries, 2254 markets, 2007/01/01-2024/06/01, version 2024/06/17"
   #   metadata: "https://microdata.worldbank.org/index.php/catalog/4483"
