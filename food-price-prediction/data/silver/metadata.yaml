@@ -7,6 +7,8 @@ files:
   original_name: 18100245.csv
   origin: Statistics Canada
   link: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024502
+  api_endpoint: ' '
+  api_documentation: ' '
   description: monthely average retail prices for selected products
   metadata: https://www.statcan.gc.ca/en/topics-start/food-price
   preprocessing: The columns were renamed based on the provided list of new column

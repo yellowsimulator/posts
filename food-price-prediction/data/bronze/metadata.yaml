@@ -7,5 +7,20 @@ files:
     original_name: "18100245.csv"
     origin: "Statistics Canada"
     link: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024502"
+    api_endpoint: " "
+    api_documentation: " "
     description: "monthely average retail prices for selected products"
     metadata: "https://www.statcan.gc.ca/en/topics-start/food-price"
+
+  # - file_name: WLD_RTP_details_2024-06-17.zip
+  #   selected_columns:
+  #     NONE: "Reference date for the given product price"
+  #     NONE: "Product unit price"
+  #     NONE: "Name of the product"
+  #   original_name: "WLD_RTP_details_2024-06-17.zip"
+  #   origin: "World BAnk"
+  #   link: "https://microdata.worldbank.org/index.php/catalog/study/WLD_2021_RTFP-CTRY_v02_M"
+  #   api_endpoint: "https://microdata.worldbank.org/index.php/api/tables/data/fcv/wld_2021_rtfp_v02_m"
+  #   api_documentation: "https://microdata.worldbank.org/index.php/catalog/4483/data-api"
+  #   description: " Monthly food price estimates by product and market 36 countries, 2254 markets, 2007/01/01-2024/06/01, version 2024/06/17"
+  #   metadata: "https://microdata.worldbank.org/index.php/catalog/4483"
