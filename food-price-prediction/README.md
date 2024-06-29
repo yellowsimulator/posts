@@ -33,3 +33,8 @@ The data follows the medallion architecture :
 - Identify main world producer of certain product, ascess the weather condition in these part of the world
 - In which geographical areas are the specific product produced, whats the weather consition there?
 - harsh weather condition affect supply amid sustained demand causing price to increase
+- product substitution: when price increase, consumer migh tend to change product choices
+
+Reference:
+
+1 - https://www150.statcan.gc.ca/n1/pub/62f0014m/62f0014m2022014-eng.htm
