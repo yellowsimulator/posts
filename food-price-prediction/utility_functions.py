@@ -43,8 +43,6 @@ def get_preprocessing_description() -> str:
         lines = docstring.split('\n')
         preprocessing_lines = [line.strip() for line in lines if line.strip().startswith("Preprocessing done:")]
         if preprocessing_lines:
-            print(preprocessing_lines)
-            #exit()
             return preprocessing_lines[0].replace("Preprocessing done: ", "").strip()
     return "Preprocessing done."
 
@@ -64,7 +62,6 @@ def rename_raw_column_names(metadata_file: str, new_column_names: List[str], tar
     metadata = get_metadata(metadata_file)
     source_path = get_full_path_without_basename(metadata_file)
     os.makedirs(target_folder, exist_ok=True)
-
     preprocessing_description = get_preprocessing_description()
 
     for file_info in metadata['files']:
@@ -75,7 +72,8 @@ def rename_raw_column_names(metadata_file: str, new_column_names: List[str], tar
         column_renames = {old: new for old, new in zip(selected_columns.keys(), new_column_names)}
         source_df.rename(columns=column_renames, inplace=True)
         preprocessed_csv_path = os.path.join(target_folder, os.path.basename(file_name))
-        source_df.to_csv(preprocessed_csv_path, index=False)
+        target_df = source_df[new_column_names]
+        target_df.to_csv(preprocessed_csv_path, index=False)
         
         file_info['preprocessing'] = preprocessing_description
         file_info['renamed_columns'] = {new: old for old, new in column_renames.items()}
@@ -83,6 +81,7 @@ def rename_raw_column_names(metadata_file: str, new_column_names: List[str], tar
     preprocessed_metadata_path = os.path.join(target_folder, os.path.basename(metadata_file))
     with open(preprocessed_metadata_path, 'w') as file:
         yaml.dump(metadata, file, sort_keys=False)
+
 
 if __name__ == "__main__":
     metadata_path = "data/bronze/metadata.yaml"
