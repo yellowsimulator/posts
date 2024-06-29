@@ -3,6 +3,7 @@ import yaml
 import pandas as pd
 from typing import Dict, Any, List
 
+
 def get_metadata(metadata_file: str) -> Dict[str, Any]:
     """
     Read YAML metadata file and return its contents as a dictionary.
